@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 370" width="880" height="370" font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic','Segoe UI',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#dd344c"/>
+    </marker>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="879" height="369" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="440" y="40" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">IAM — 정책은 그룹에 붙이고, 사용자는 그룹에 넣는다</text>
+
+  <!-- Policies -->
+  <text x="140" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#475569">IAM 정책</text>
+  <rect x="40" y="94" width="200" height="96" rx="10" fill="#fdf2f4" stroke="#dd344c"/>
+  <text x="140" y="120" text-anchor="middle" font-size="13" font-weight="700" fill="#b4233a">EC2 조작 허가</text>
+  <g font-family="monospace" font-size="11" fill="#7f1d1d">
+    <text x="58" y="146">Effect: Allow</text>
+    <text x="58" y="162">Action: ec2:Start*, Stop*</text>
+    <text x="58" y="178">Resource: *</text>
+  </g>
+  <rect x="40" y="206" width="200" height="96" rx="10" fill="#fdf2f4" stroke="#dd344c"/>
+  <text x="140" y="232" text-anchor="middle" font-size="13" font-weight="700" fill="#b4233a">S3 읽기 허가</text>
+  <g font-family="monospace" font-size="11" fill="#7f1d1d">
+    <text x="58" y="258">Effect: Allow</text>
+    <text x="58" y="274">Action: s3:GetObject</text>
+    <text x="58" y="290">Resource: my-bucket/*</text>
+  </g>
+
+  <!-- Groups -->
+  <text x="440" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#475569">IAM 그룹</text>
+  <rect x="340" y="106" width="200" height="72" rx="10" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+  <text x="440" y="138" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">개발자</text>
+  <text x="440" y="160" text-anchor="middle" font-size="12" fill="#64748b">EC2 + S3 정책</text>
+  <rect x="340" y="218" width="200" height="72" rx="10" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+  <text x="440" y="250" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">분석가</text>
+  <text x="440" y="272" text-anchor="middle" font-size="12" fill="#64748b">S3 정책만</text>
+
+  <line x1="240" y1="142" x2="334" y2="142" stroke="#dd344c" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="240" y1="254" x2="334" y2="150" stroke="#dd344c" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="240" y1="254" x2="334" y2="254" stroke="#dd344c" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="287" y="92" text-anchor="middle" font-size="11" fill="#b4233a">붙인다</text>
+
+  <!-- Users -->
+  <text x="740" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#475569">IAM 사용자</text>
+  <g font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">
+    <rect x="660" y="96" width="160" height="40" rx="20" fill="#ffffff" stroke="#94a3b8"/>
+    <text x="740" y="121">👤 김개발</text>
+    <rect x="660" y="146" width="160" height="40" rx="20" fill="#ffffff" stroke="#94a3b8"/>
+    <text x="740" y="171">👤 이개발</text>
+    <rect x="660" y="234" width="160" height="40" rx="20" fill="#ffffff" stroke="#94a3b8"/>
+    <text x="740" y="259">👤 박분석</text>
+  </g>
+  <g stroke="#94a3b8" stroke-width="1.5">
+    <line x1="540" y1="136" x2="660" y2="116"/>
+    <line x1="540" y1="148" x2="660" y2="166"/>
+    <line x1="540" y1="254" x2="660" y2="254"/>
+  </g>
+  <text x="600" y="92" text-anchor="middle" font-size="11" fill="#64748b">소속</text>
+
+  <rect x="40" y="318" width="800" height="36" rx="8" fill="#f1f5f9"/>
+  <text x="440" y="341" text-anchor="middle" font-size="12" fill="#475569">사람이 바뀌어도 그룹만 옮기면 권한이 따라간다 · 루트 사용자는 평소에 쓰지 않는다</text>
+</svg>

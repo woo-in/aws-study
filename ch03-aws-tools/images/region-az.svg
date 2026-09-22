@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 360" width="880" height="360" font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic','Segoe UI',sans-serif">
+  <rect x="0.5" y="0.5" width="879" height="359" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="440" y="40" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">리전 ⊃ 가용 영역(AZ) ⊃ 데이터 센터</text>
+
+  <!-- Region -->
+  <rect x="36" y="62" width="808" height="232" rx="14" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+  <text x="58" y="90" font-size="15" font-weight="700" fill="#0f172a">리전 — 서울</text>
+  <text x="170" y="90" font-family="monospace" font-size="13" fill="#475569">ap-northeast-2</text>
+  <text x="824" y="90" text-anchor="end" font-size="12" fill="#64748b">지리적 분류 · 서비스와 요금이 리전마다 다르다</text>
+
+  <!-- AZs -->
+  <g font-size="12">
+    <rect x="62" y="108" width="240" height="164" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="182" y="134" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">AZ-a</text>
+    <text x="182" y="152" text-anchor="middle" font-family="monospace" fill="#1d4ed8">ap-northeast-2a</text>
+    <rect x="82" y="168" width="96" height="56" rx="6" fill="#ffffff" stroke="#93c5fd"/>
+    <text x="130" y="200" text-anchor="middle" fill="#334155">데이터 센터</text>
+    <rect x="186" y="168" width="96" height="56" rx="6" fill="#ffffff" stroke="#93c5fd"/>
+    <text x="234" y="200" text-anchor="middle" fill="#334155">데이터 센터</text>
+    <rect x="130" y="236" width="104" height="26" rx="13" fill="#ec7211"/>
+    <text x="182" y="254" text-anchor="middle" font-weight="700" fill="#ffffff">EC2 (웹 1)</text>
+
+    <rect x="320" y="108" width="240" height="164" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="440" y="134" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">AZ-b</text>
+    <text x="440" y="152" text-anchor="middle" font-family="monospace" fill="#1d4ed8">ap-northeast-2b</text>
+    <rect x="392" y="168" width="96" height="56" rx="6" fill="#ffffff" stroke="#93c5fd"/>
+    <text x="440" y="200" text-anchor="middle" fill="#334155">데이터 센터</text>
+
+    <rect x="578" y="108" width="240" height="164" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="698" y="134" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">AZ-c</text>
+    <text x="698" y="152" text-anchor="middle" font-family="monospace" fill="#1d4ed8">ap-northeast-2c</text>
+    <rect x="598" y="168" width="96" height="56" rx="6" fill="#ffffff" stroke="#93c5fd"/>
+    <text x="646" y="200" text-anchor="middle" fill="#334155">데이터 센터</text>
+    <rect x="702" y="168" width="96" height="56" rx="6" fill="#ffffff" stroke="#93c5fd"/>
+    <text x="750" y="200" text-anchor="middle" fill="#334155">데이터 센터</text>
+    <rect x="646" y="236" width="104" height="26" rx="13" fill="#ec7211"/>
+    <text x="698" y="254" text-anchor="middle" font-weight="700" fill="#ffffff">EC2 (웹 2)</text>
+  </g>
+
+  <rect x="36" y="308" width="808" height="36" rx="8" fill="#f1f5f9"/>
+  <text x="440" y="331" text-anchor="middle" font-size="12" fill="#475569">AZ끼리는 전원 · 네트워크가 독립 → 서버를 여러 AZ에 나눠 두면 AZ 하나가 멈춰도 서비스는 계속된다</text>
+</svg>
