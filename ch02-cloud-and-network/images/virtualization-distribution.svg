@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 380" width="880" height="380" font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic','Segoe UI',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ec7211"/>
+    </marker>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="879" height="379" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="440" y="40" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">클라우드를 지탱하는 2대 기술</text>
+
+  <!-- Left: virtualization -->
+  <rect x="36" y="64" width="380" height="290" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="226" y="92" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">가상화</text>
+  <text x="226" y="114" text-anchor="middle" font-size="12" fill="#64748b">물리 서버 한 대 → 가상 서버 여러 대</text>
+
+  <rect x="60" y="136" width="332" height="150" rx="10" fill="#fff7ed" stroke="#ec7211"/>
+  <text x="226" y="158" text-anchor="middle" font-size="12" font-weight="700" fill="#c2410c">물리 서버 1대</text>
+  <g font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">
+    <rect x="78" y="172" width="92" height="96" rx="8" fill="#ffffff" stroke="#fdba74"/>
+    <text x="124" y="214">가상 서버</text><text x="124" y="232">A</text>
+    <rect x="180" y="172" width="92" height="96" rx="8" fill="#ffffff" stroke="#fdba74"/>
+    <text x="226" y="214">가상 서버</text><text x="226" y="232">B</text>
+    <rect x="282" y="172" width="92" height="96" rx="8" fill="#ffffff" stroke="#fdba74"/>
+    <text x="328" y="214">가상 서버</text><text x="328" y="232">C</text>
+  </g>
+  <text x="226" y="322" text-anchor="middle" font-size="12" fill="#475569">EC2 인스턴스 하나 = 가상 서버 한 대</text>
+
+  <!-- Right: distribution -->
+  <rect x="464" y="64" width="380" height="290" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="654" y="92" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">분산 처리</text>
+  <text x="654" y="114" text-anchor="middle" font-size="12" fill="#64748b">처리를 기기 여러 대에 나눠 맡긴다</text>
+
+  <rect x="604" y="134" width="100" height="36" rx="8" fill="#e2e8f0" stroke="#94a3b8"/>
+  <text x="654" y="157" text-anchor="middle" font-size="12" font-weight="700" fill="#0f172a">대량의 접속</text>
+  <line x1="654" y1="170" x2="654" y2="190" stroke="#ec7211" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="574" y="194" width="160" height="40" rx="8" fill="#ec7211"/>
+  <text x="654" y="219" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">로드 밸런서 (ELB)</text>
+
+  <line x1="620" y1="234" x2="534" y2="262" stroke="#ec7211" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="654" y1="234" x2="654" y2="262" stroke="#ec7211" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="688" y1="234" x2="774" y2="262" stroke="#ec7211" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <g font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">
+    <rect x="488" y="266" width="92" height="40" rx="8" fill="#ffffff" stroke="#fdba74"/>
+    <text x="534" y="291">서버 1</text>
+    <rect x="608" y="266" width="92" height="40" rx="8" fill="#ffffff" stroke="#fdba74"/>
+    <text x="654" y="291">서버 2</text>
+    <rect x="728" y="266" width="92" height="40" rx="8" fill="#ffffff" stroke="#fdba74"/>
+    <text x="774" y="291">서버 3</text>
+  </g>
+  <text x="654" y="336" text-anchor="middle" font-size="12" fill="#475569">한 대의 부담 ↓ · 한 대가 죽어도 계속 가동 (이중화)</text>
+</svg>
