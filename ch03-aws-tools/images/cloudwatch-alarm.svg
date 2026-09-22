@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 350" width="880" height="350" font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic','Segoe UI',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e7157b"/>
+    </marker>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="879" height="349" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="440" y="40" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">CloudWatch — 지표를 모으고, 임계값을 넘으면 움직인다</text>
+
+  <!-- EC2 -->
+  <rect x="36" y="80" width="190" height="210" rx="12" fill="#fff7ed" stroke="#ec7211"/>
+  <text x="131" y="108" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">EC2 인스턴스</text>
+  <g font-size="12" fill="#9a3412">
+    <text x="56" y="144">· CPU 사용률</text>
+    <text x="56" y="170">· 볼륨 읽기 · 쓰기</text>
+    <text x="56" y="196">· 네트워크 패킷 수</text>
+    <text x="56" y="222">· 로그</text>
+  </g>
+
+  <line x1="230" y1="185" x2="296" y2="185" stroke="#e7157b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="263" y="175" text-anchor="middle" font-size="11" fill="#be185d">수집</text>
+
+  <!-- CloudWatch -->
+  <rect x="300" y="80" width="250" height="210" rx="12" fill="#fdf2f8" stroke="#e7157b" stroke-width="1.5"/>
+  <text x="425" y="108" text-anchor="middle" font-size="15" font-weight="700" fill="#be185d">CloudWatch</text>
+  <!-- chart -->
+  <rect x="320" y="122" width="210" height="110" rx="8" fill="#ffffff" stroke="#fbcfe8"/>
+  <line x1="330" y1="160" x2="520" y2="160" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="334" y="154" font-size="10" fill="#ef4444">임계값 80%</text>
+  <polyline points="332,215 356,208 380,212 404,196 428,188 452,170 476,146 500,140 518,150" fill="none" stroke="#e7157b" stroke-width="2"/>
+  <circle cx="462" cy="160" r="4" fill="#ef4444"/>
+  <text x="425" y="258" text-anchor="middle" font-size="12" fill="#9d174d">지표 · 로그(Logs) 기록</text>
+  <text x="425" y="276" text-anchor="middle" font-size="12" font-weight="700" fill="#9d174d">넘으면 경보(Alarm)</text>
+
+  <line x1="554" y1="160" x2="626" y2="100" stroke="#e7157b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="554" y1="175" x2="626" y2="156" stroke="#e7157b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="554" y1="195" x2="626" y2="212" stroke="#e7157b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="554" y1="210" x2="626" y2="268" stroke="#e7157b" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- actions -->
+  <g font-size="13" font-weight="700" fill="#0f172a">
+    <rect x="630" y="78" width="214" height="44" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="648" y="105">✉️ 이메일 송신</text>
+    <rect x="630" y="134" width="214" height="44" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="648" y="161">⏯ EC2 시작 · 정지</text>
+    <rect x="630" y="190" width="214" height="44" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="648" y="217">↕ Auto Scaling</text>
+    <rect x="630" y="246" width="214" height="44" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="648" y="273">λ Lambda 함수 실행</text>
+  </g>
+  <text x="737" y="318" text-anchor="middle" font-size="12" fill="#64748b">임계값을 넘었을 때의 동작</text>
+</svg>

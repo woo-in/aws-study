@@ -39,10 +39,12 @@ AWS를 간단하게 사용해 본 적은 있지만, **잘 모르고 썼습니다
 
 ### 3장. AWS를 사용하기 위한 도구
 
-- [ ] AWS 계정과 관리 콘솔 · 대시보드
-- [ ] **AWS IAM**과 접근 권한
-- [ ] Amazon CloudWatch · AWS Billing and Cost Management
-- [ ] **리전과 가용 영역**
+🔗 [#2 docs: 3장 AWS를 사용하기 위한 도구 정리 (ch03)](https://github.com/woo-in/aws-study/pull/2) · 📝 [정리 노트](./ch03-aws-tools/README.md)
+
+- **루트 사용자**는 계정의 모든 권한을 가진다. 평소에는 필요한 권한만 준 **IAM 사용자**로 작업한다.
+- **IAM 정책**은 무엇에 대하여(`Resource`) 어떤 조작을(`Action`) 허가할지 말지(`Effect`)를 정한다. 정책은 **그룹**에 붙이고, 사용자는 그룹에 넣어 관리한다.
+- **CloudWatch**는 CPU 사용률 같은 지표와 로그를 모으고, 임계값을 넘으면 이메일 · EC2 시작/정지 · Auto Scaling · Lambda 실행으로 대응한다.
+- **리전 ⊃ 가용 영역(AZ) ⊃ 데이터 센터**. 서버를 여러 AZ에 나눠 두면 AZ 하나가 멈춰도 서비스가 계속된다. 콘솔 조작도 리전 단위다.
 
 ### 4장. 서버 서비스 Amazon EC2
 
