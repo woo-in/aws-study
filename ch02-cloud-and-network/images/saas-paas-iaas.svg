@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic','Segoe UI',sans-serif">
+  <rect x="0.5" y="0.5" width="879" height="419" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="440" y="40" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">사업자가 어디까지 준비해 주는가</text>
+
+  <!-- legend -->
+  <rect x="300" y="56" width="16" height="16" rx="3" fill="#ec7211"/>
+  <text x="324" y="69" font-size="12" fill="#334155">사업자(AWS)가 제공 · 관리</text>
+  <rect x="490" y="56" width="16" height="16" rx="3" fill="#ffffff" stroke="#94a3b8" stroke-dasharray="4 3"/>
+  <text x="514" y="69" font-size="12" fill="#334155">사용자가 직접 준비 · 관리</text>
+
+  <!-- row labels -->
+  <g font-size="13" font-weight="700" fill="#475569" text-anchor="end">
+    <text x="150" y="130">애플리케이션</text>
+    <text x="150" y="190">플랫폼</text>
+    <text x="150" y="204" font-size="11" font-weight="400" fill="#94a3b8">(OS · 미들웨어)</text>
+    <text x="150" y="250">인프라</text>
+    <text x="150" y="264" font-size="11" font-weight="400" fill="#94a3b8">(서버 · 네트워크)</text>
+  </g>
+
+  <!-- column: SaaS -->
+  <text x="270" y="100" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">SaaS</text>
+  <rect x="190" y="108" width="160" height="50" rx="8" fill="#ec7211"/>
+  <rect x="190" y="168" width="160" height="50" rx="8" fill="#ec7211"/>
+  <rect x="190" y="228" width="160" height="50" rx="8" fill="#ec7211"/>
+  <text x="270" y="308" text-anchor="middle" font-size="12" fill="#475569">쓰기만 한다</text>
+  <text x="270" y="328" text-anchor="middle" font-size="12" fill="#94a3b8">Gmail, Notion</text>
+
+  <!-- column: PaaS -->
+  <text x="460" y="100" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">PaaS</text>
+  <rect x="380" y="108" width="160" height="50" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-dasharray="4 3"/>
+  <text x="460" y="138" text-anchor="middle" font-size="12" fill="#475569">내 앱을 올린다</text>
+  <rect x="380" y="168" width="160" height="50" rx="8" fill="#ec7211"/>
+  <rect x="380" y="228" width="160" height="50" rx="8" fill="#ec7211"/>
+  <text x="460" y="308" text-anchor="middle" font-size="12" fill="#475569">앱만 신경 쓴다</text>
+  <text x="460" y="328" text-anchor="middle" font-size="12" fill="#94a3b8">Elastic Beanstalk</text>
+
+  <!-- column: IaaS -->
+  <text x="650" y="100" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">IaaS</text>
+  <rect x="570" y="108" width="160" height="50" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-dasharray="4 3"/>
+  <text x="650" y="138" text-anchor="middle" font-size="12" fill="#475569">내 앱을 올린다</text>
+  <rect x="570" y="168" width="160" height="50" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-dasharray="4 3"/>
+  <text x="650" y="198" text-anchor="middle" font-size="12" fill="#475569">OS부터 직접 설치</text>
+  <rect x="570" y="228" width="160" height="50" rx="8" fill="#ec7211"/>
+  <text x="650" y="308" text-anchor="middle" font-size="12" fill="#475569">서버만 빌린다</text>
+  <text x="650" y="328" text-anchor="middle" font-size="12" fill="#94a3b8">Amazon EC2</text>
+
+  <!-- bottom arrow -->
+  <line x1="200" y1="370" x2="720" y2="370" stroke="#cbd5e1" stroke-width="2"/>
+  <path d="M720,364 L732,370 L720,376 z" fill="#cbd5e1"/>
+  <text x="270" y="396" text-anchor="middle" font-size="12" fill="#64748b">편하다</text>
+  <text x="650" y="396" text-anchor="middle" font-size="12" fill="#64748b">자유도 ↑ · 직접 관리할 것 ↑</text>
+</svg>

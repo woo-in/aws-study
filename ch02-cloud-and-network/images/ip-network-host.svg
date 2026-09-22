@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="880" height="340" font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic','Segoe UI',sans-serif">
+  <rect x="0.5" y="0.5" width="879" height="339" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="440" y="40" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">192.168.0.10/24 — 앞 24비트가 네트워크부</text>
+
+  <!-- octets -->
+  <g font-family="monospace" font-size="22" font-weight="700" text-anchor="middle">
+    <rect x="120" y="70" width="140" height="56" rx="8" fill="#fff7ed" stroke="#ec7211"/>
+    <text x="190" y="106" fill="#c2410c">192</text>
+    <rect x="270" y="70" width="140" height="56" rx="8" fill="#fff7ed" stroke="#ec7211"/>
+    <text x="340" y="106" fill="#c2410c">168</text>
+    <rect x="420" y="70" width="140" height="56" rx="8" fill="#fff7ed" stroke="#ec7211"/>
+    <text x="490" y="106" fill="#c2410c">0</text>
+    <rect x="600" y="70" width="140" height="56" rx="8" fill="#eff6ff" stroke="#3b82f6"/>
+    <text x="670" y="106" fill="#1d4ed8">10</text>
+  </g>
+  <g font-family="monospace" font-size="12" fill="#94a3b8" text-anchor="middle">
+    <text x="190" y="146">8비트</text><text x="340" y="146">8비트</text><text x="490" y="146">8비트</text><text x="670" y="146">8비트</text>
+  </g>
+
+  <!-- braces -->
+  <path d="M120,160 v10 h440 v-10" fill="none" stroke="#ec7211" stroke-width="1.5"/>
+  <text x="340" y="194" text-anchor="middle" font-size="14" font-weight="700" fill="#c2410c">네트워크부 (24비트) — 어느 동네인가</text>
+  <path d="M600,160 v10 h140 v-10" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="670" y="194" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">호스트부 (8비트)</text>
+  <text x="670" y="212" text-anchor="middle" font-size="12" fill="#1d4ed8">몇 번지 집인가</text>
+
+  <text x="440" y="236" text-anchor="middle" font-family="monospace" font-size="12" fill="#64748b">서브넷 마스크 255.255.255.0 = /24</text>
+
+  <!-- host range -->
+  <g font-size="12" text-anchor="middle">
+    <rect x="120" y="256" width="180" height="56" rx="8" fill="#f1f5f9" stroke="#cbd5e1"/>
+    <text x="210" y="279" font-family="monospace" font-weight="700" fill="#334155">192.168.0.0</text>
+    <text x="210" y="299" fill="#64748b">네트워크 자체</text>
+
+    <rect x="320" y="256" width="240" height="56" rx="8" fill="#eff6ff" stroke="#3b82f6"/>
+    <text x="440" y="279" font-family="monospace" font-weight="700" fill="#1d4ed8">.1 ~ .254</text>
+    <text x="440" y="299" fill="#1d4ed8">장비에 할당 (254개)</text>
+
+    <rect x="580" y="256" width="180" height="56" rx="8" fill="#f1f5f9" stroke="#cbd5e1"/>
+    <text x="670" y="279" font-family="monospace" font-weight="700" fill="#334155">192.168.0.255</text>
+    <text x="670" y="299" fill="#64748b">브로드캐스트</text>
+  </g>
+</svg>
